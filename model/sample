@@ -1,0 +1,9 @@
+var mongoose =require('mongoose');
+const sampleSchema=mongoose.Schema({
+    StudentName:String,
+    StudentAge:Number,
+    StudentDept:String
+})
+// collectin (sample) and schema(sampleSchema)
+const sampleModel=mongoose.model("sample",sampleSchema);
+module.exports=sampleModel;
